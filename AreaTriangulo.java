@@ -19,5 +19,7 @@ public class AreaTriangulo{
 		//mostramos en consola el resultado
 		System.out.println(" ");
 		System.out.println("El área del triangulo es: " + ((base * altura) / 2));
+
+		sc.close();
 	}
 }
