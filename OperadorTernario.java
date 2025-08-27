@@ -29,5 +29,7 @@ public class OperadorTernario {
 
 		//mostramos el resultado:
 		System.out.println("El número mayor de los 3 es: " + mayor);
+
+		lector.close();
 	}
 }

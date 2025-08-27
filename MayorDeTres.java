@@ -29,5 +29,6 @@ public class MayorDeTres {
 		} else {
 			System.out.println("El número " + num3 + " es el mayor de los tres.");
 		}
+		lector.close();
 	}
 }
