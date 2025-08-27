@@ -12,16 +12,24 @@ public class CalculadoraBasica{
 		System.out.println("El siguiente programa le pide al usuario que ingrese dos número y a partir de ahi éste realiza varias operaciones.");
 		
 		//le peidmos al usuario que nos de dos números enteros
-		System.out.print("Ingrese el primer número 1: ");
+		System.out.print("Ingrese el primer número : ");
 		int num1 = sc.nextInt();
-		System.out.print("Ingrese el segundo número 2: ");
+		System.out.print("Ingrese el segundo número : ");
 		int num2 = sc.nextInt();
 
 		//se realiza las operaciones y se muestran en consola
 		System.out.println("Suma: " + (num1 + num2));
 		System.out.println("Resta: " + (num1 - num2));
 		System.out.println("Multiplicación: " + (num1 * num2));
-		System.out.println("División: " + ((double) num1 / num2));
-		System.out.println("Módulo: " + (num1 % num2));
+		
+		//condicion para la división y el modulo
+		if (num2 != 0) {
+			System.out.println("División: " + ((double) num1 / num2));
+			System.out.println("Módulo: " + (num1 % num2));
+		} else {
+			System.out.println("No se puede dividir ni cálcular el módulo si el divisior es 0");
+		}
+
+		sc.close();  //cerramos el scanner
 	}
 }
