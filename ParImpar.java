@@ -21,5 +21,7 @@ public class ParImpar{
 		} else {
 			System.out.println("El número es impar");
 		}
+		//cerramos el scanner
+		lector.close();
 	}
 }
