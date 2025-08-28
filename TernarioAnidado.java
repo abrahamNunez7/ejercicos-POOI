@@ -25,5 +25,7 @@ public class TernarioAnidado {
 
 		//imprimimos en consola
 		System.out.println("El número mayor es: " + mayor);
+
+		sc.close();
 	}
 }
